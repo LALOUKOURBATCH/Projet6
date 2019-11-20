@@ -54,4 +54,11 @@ class Client:
         print("quel montant ? ")
         x = int(intput(""))
         c.retire(x)
+    
+    def depose(self):
+        c = self.identifieCompte()
+        print ("quel montant ?")
+        x = int(input("?"))
+        #le string lu en ecrant devra être modifie en int
+        c.depose(x)
 
